@@ -1,6 +1,7 @@
 import { PanelSection, PanelSectionRow, ToggleField, staticClasses } from "@decky/ui";
 import { callable, definePlugin } from "@decky/api";
 import { useEffect, useState } from "react";
+import { QRCodeSVG } from "qrcode.react";
 
 type Status = { running: boolean; url: string | null; screen: string };
 
@@ -27,6 +28,13 @@ function Content() {
           onChange={async (on) => setS(await (on ? start() : stop()))}
         />
       </PanelSectionRow>
+      {s.url && (
+        <PanelSectionRow>
+          <div style={{ display: "flex", justifyContent: "center", padding: "8px", background: "#fff" }}>
+            <QRCodeSVG value={s.url} size={180} />
+          </div>
+        </PanelSectionRow>
+      )}
       {s.running && (
         <PanelSectionRow>
           <div style={{ fontSize: "11px", wordBreak: "break-all", whiteSpace: "pre-wrap" }}>
