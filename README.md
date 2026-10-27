@@ -26,7 +26,7 @@ Sessions start in `~/projects`. Your home folder won't work: Claude Code never r
 
 ## Install
 
-Build `claudecky.zip` (below), copy it to the Deck,
+Download `claudecky.zip` from [Releases](https://github.com/Andarael/claudecky/releases) (or build it, below) on the Deck,
 then in Game Mode: Decky → Settings → Developer → install from ZIP file.
 
 ## Use
