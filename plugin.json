@@ -1,0 +1,11 @@
+{
+  "name": "Claudecky",
+  "author": "deck",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "tags": ["claude"],
+    "description": "Start/stop a Claude Code Remote Control server from Game Mode.",
+    "image": ""
+  }
+}
